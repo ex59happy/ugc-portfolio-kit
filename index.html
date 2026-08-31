@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- CLAUDE: replace the title + description with the creator's real name -->
+<title>Your Name | UGC Creator</title>
+<meta name="description" content="UGC creator portfolio.">
+<meta property="og:title" content="Your Name | UGC Creator">
+<meta property="og:description" content="UGC creator portfolio.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- =========================================================
+     1. HERO
+     ========================================================= -->
+<header class="hero">
+  <div class="wrap hero__grid">
+
+    <div class="hero__text">
+      <h1 class="hero__name">Your Name</h1>
+      <p class="hero__role">UGC Creator</p>
+
+      <a class="pill" href="#work-with-me">contact</a>
+
+      <div class="contacts">
+
+        <a class="contact" href="mailto:you@email.com">
+          <span class="contact__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4.4-8 5-8-5V6l8 5 8-5v2.4Z"/></svg>
+          </span>
+          <span>
+            <span class="contact__label">Email</span><br>
+            <span class="contact__value">you@email.com</span>
+          </span>
+        </a>
+
+        <a class="contact" href="https://instagram.com/yourhandle" target="_blank" rel="noopener">
+          <span class="contact__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c0 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2 0-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c0-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2Zm0 3.1A6.7 6.7 0 1 0 18.7 12 6.7 6.7 0 0 0 12 5.3Zm0 11A4.3 4.3 0 1 1 16.3 12 4.3 4.3 0 0 1 12 16.3Zm6.9-11.2a1.6 1.6 0 1 1-1.6-1.6 1.6 1.6 0 0 1 1.6 1.6Z"/></svg>
+          </span>
+          <span>
+            <span class="contact__label">Instagram</span><br>
+            <span class="contact__value">yourhandle</span>
+          </span>
+        </a>
+
+        <a class="contact" href="https://tiktok.com/@yourhandle" target="_blank" rel="noopener">
+          <span class="contact__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.6 5.8a4.8 4.8 0 0 1-1-2.8h-3.1v12.2a2.6 2.6 0 1 1-1.9-2.5V9.5a5.7 5.7 0 1 0 5 5.6V9.3a7.8 7.8 0 0 0 4.5 1.4V7.6a4.7 4.7 0 0 1-3.5-1.8Z"/></svg>
+          </span>
+          <span>
+            <span class="contact__label">TikTok</span><br>
+            <span class="contact__value contact__value--empty">add your tiktok</span>
+          </span>
+        </a>
+
+      </div>
+    </div>
+
+    <!-- COVER PHOTO
+         CLAUDE: once media/cover.jpg exists, replace this whole div with:
+         <div class="cover"><img src="media/cover.jpg" alt="Your Name"></div> -->
+    <div class="cover cover--empty">add your cover photo</div>
+
+  </div>
+</header>
+
+
+<!-- =========================================================
+     2. TRUSTED BY
+     CLAUDE: use <img class="trusted__logo"> if a logo file exists in
+     media/logos/, otherwise use <span class="trusted__name">.
+     Mixing both in the same row is fine. Delete this whole
+     <section> if the creator has no brands yet.
+     ========================================================= -->
+<section class="trusted">
+  <div class="wrap">
+    <p class="trusted__label">Trusted by</p>
+    <div class="trusted__row">
+      <span class="trusted__name">Brand One</span>
+      <span class="trusted__name">Brand Two</span>
+      <span class="trusted__name">Brand Three</span>
+      <span class="trusted__name">Brand Four</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- =========================================================
+     3. UGC EXAMPLES
+     ========================================================= -->
+<section class="work" id="work">
+  <div class="wrap">
+    <h2 class="section-title">UGC Examples/Projects:</h2>
+
+    <div class="work__grid">
+
+      <!-- CARD PATTERN A  -  a real video file (this is the good one)
+           <article class="card">
+             <div class="phone">
+               <video src="media/videos/video1.mp4" poster="media/videos/video1.jpg"
+                      muted loop playsinline preload="metadata"></video>
+               <button class="sound" aria-label="Toggle sound"></button>
+             </div>
+             <p class="card__brand">Brand / @handle</p>
+             <p class="card__caption">1.2M organic views</p>
+           </article>
+
+           CARD PATTERN B  -  no file, just a link to the live post
+           <article class="card">
+             <a class="phone" href="https://instagram.com/reel/xxxx" target="_blank" rel="noopener">
+               <img src="media/videos/video1.jpg" alt="Brand campaign">
+             </a>
+             <p class="card__brand">Brand / @handle</p>
+             <p class="card__caption">1.2M organic views</p>
+           </article>
+      -->
+
+      <article class="card">
+        <div class="phone phone--empty"><span><b>video 1</b><span>upload or paste a link</span></span></div>
+        <p class="card__brand">brand / handle</p>
+        <p class="card__caption">caption, e.g. 55M organic views</p>
+      </article>
+
+      <article class="card">
+        <div class="phone phone--empty"><span><b>video 2</b><span>upload or paste a link</span></span></div>
+        <p class="card__brand">brand / handle</p>
+        <p class="card__caption">caption, e.g. 55M organic views</p>
+      </article>
+
+      <article class="card">
+        <div class="phone phone--empty"><span><b>video 3</b><span>upload or paste a link</span></span></div>
+        <p class="card__brand">brand / handle</p>
+        <p class="card__caption">caption, e.g. 55M organic views</p>
+      </article>
+
+      <article class="card">
+        <div class="phone phone--empty"><span><b>video 4</b><span>upload or paste a link</span></span></div>
+        <p class="card__brand">brand / handle</p>
+        <p class="card__caption">caption, e.g. 55M organic views</p>
+      </article>
+
+      <article class="card">
+        <div class="phone phone--empty"><span><b>video 5</b><span>upload or paste a link</span></span></div>
+        <p class="card__brand">brand / handle</p>
+        <p class="card__caption">caption, e.g. 55M organic views</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- =========================================================
+     4. WORK WITH ME
+     ========================================================= -->
+<section class="contactsec" id="work-with-me">
+  <div class="wrap">
+    <h2 class="section-title">Work With Me!</h2>
+
+    <div class="contactsec__grid">
+
+      <!-- CLAUDE: once media/about.jpg exists, replace with:
+           <div class="about"><img src="media/about.jpg" alt="Your Name"></div> -->
+      <div class="about about--empty">add a photo</div>
+
+      <div class="connect">
+        <p class="connect__title">Connect with me:</p>
+
+        <div class="contacts">
+
+          <a class="contact" href="mailto:you@email.com">
+            <span class="contact__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4.4-8 5-8-5V6l8 5 8-5v2.4Z"/></svg>
+            </span>
+            <span>
+              <span class="contact__label">Email</span><br>
+              <span class="contact__value">you@email.com</span>
+            </span>
+          </a>
+
+          <a class="contact" href="https://instagram.com/yourhandle" target="_blank" rel="noopener">
+            <span class="contact__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c0 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2 0-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c0-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2Zm0 3.1A6.7 6.7 0 1 0 18.7 12 6.7 6.7 0 0 0 12 5.3Zm0 11A4.3 4.3 0 1 1 16.3 12 4.3 4.3 0 0 1 12 16.3Zm6.9-11.2a1.6 1.6 0 1 1-1.6-1.6 1.6 1.6 0 0 1 1.6 1.6Z"/></svg>
+            </span>
+            <span>
+              <span class="contact__label">Instagram</span><br>
+              <span class="contact__value">yourhandle</span>
+            </span>
+          </a>
+
+          <a class="contact" href="https://tiktok.com/@yourhandle" target="_blank" rel="noopener">
+            <span class="contact__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.6 5.8a4.8 4.8 0 0 1-1-2.8h-3.1v12.2a2.6 2.6 0 1 1-1.9-2.5V9.5a5.7 5.7 0 1 0 5 5.6V9.3a7.8 7.8 0 0 0 4.5 1.4V7.6a4.7 4.7 0 0 1-3.5-1.8Z"/></svg>
+            </span>
+            <span>
+              <span class="contact__label">TikTok</span><br>
+              <span class="contact__value contact__value--empty">add your tiktok</span>
+            </span>
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>&copy; <span id="year">2026</span> Your Name</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+Drop your UGC videos in this folder.
+
+Name them video1.mp4, video2.mp4, and so on (up to 5). If you don't
+rename them, that's fine, Claude will sort it out.
+
+IMPORTANT: download these from Instagram or TikTok, not from your
+camera roll. Camera roll videos are a format some browsers won't
+play, and they are much larger than they need to be.
+
+You can delete this file.

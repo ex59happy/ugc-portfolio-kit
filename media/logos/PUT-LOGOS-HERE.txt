@@ -1,0 +1,7 @@
+Optional. Drop brand logo files here (png with a transparent
+background looks best, svg is even better).
+
+No logos? No problem. Claude will write the brand names out as
+clean text instead, which looks just as good.
+
+You can delete this file.

@@ -1,0 +1,8 @@
+Drop two photos of yourself in this folder:
+
+  cover.jpg   the big photo at the top of your site (portrait works best)
+  about.jpg   the photo in the "Work With Me" section
+
+Don't worry about the exact names, Claude will rename them for you.
+
+You can delete this file.
