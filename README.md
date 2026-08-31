@@ -42,7 +42,7 @@ Open Claude Code and paste this in:
 ```
 Build my UGC creator portfolio. Make a folder on my Desktop called
 ugc-portfolio, download the template from
-github.com/YOUR-GITHUB/ugc-portfolio-kit into it, then follow CLAUDE.md.
+github.com/ex59happy/ugc-portfolio-kit into it, then follow CLAUDE.md.
 ```
 
 That's the only thing you have to copy. Claude takes it from there: it'll ask
