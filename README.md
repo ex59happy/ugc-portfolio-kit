@@ -40,9 +40,12 @@ strip. Logo files if you have them, but names alone look great.
 Open Claude Code and paste this in:
 
 ```
-Build my UGC creator portfolio. Make a folder on my Desktop called
-ugc-portfolio, download the template from
-github.com/ex59happy/ugc-portfolio-kit into it, then follow CLAUDE.md.
+Build my UGC creator portfolio.
+
+Make a folder called ugc-portfolio on my Desktop and put the template from
+github.com/ex59happy/ugc-portfolio-kit directly inside it, so that CLAUDE.md
+and index.html sit at the top level of that folder. Then read CLAUDE.md and
+follow it exactly.
 ```
 
 That's the only thing you have to copy. Claude takes it from there: it'll ask

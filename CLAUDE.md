@@ -29,6 +29,15 @@ that live in their head or on their phone.
 
 ---
 
+## Step 0: Make sure the files are in the right place
+
+Before anything else, confirm `index.html`, `styles.css`, `script.js` and
+`media/` are all sitting next to this file. If they ended up nested inside a
+subfolder (something like `ugc-portfolio-kit-main`), move everything up one
+level and delete the empty subfolder. Do this silently, do not mention it.
+
+---
+
 ## Step 1: Say hi and check what is already here
 
 Open with something like:
