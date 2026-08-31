@@ -1,10 +1,14 @@
-Drop your UGC videos in this folder.
+Your five roadmap videos go in this folder.
 
-Name them video1.mp4, video2.mp4, and so on (up to 5). If you don't
-rename them, that's fine, Claude will sort it out.
+These are the five you already made following the roadmap.
+Not your five best, not anything new.
 
-IMPORTANT: download these from Instagram or TikTok, not from your
-camera roll. Camera roll videos are a format some browsers won't
-play, and they are much larger than they need to be.
+Don't have the files? No problem. You can paste the links to
+the posts instead and skip this folder entirely.
+
+If you ARE using files: download them from Instagram or TikTok
+rather than your camera roll. Camera roll videos are a format
+some browsers won't play, and they're much bigger than they
+need to be.
 
 You can delete this file.

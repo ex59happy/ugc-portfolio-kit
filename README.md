@@ -12,14 +12,18 @@ and you end up with a live link you can send to brands.
 Everything below takes 10 minutes and it's the difference between this being
 easy and being annoying. Get it done before you open Claude Code.
 
-**1. Save 5 of your best UGC videos to your computer.**
+**1. Get your five roadmap videos.**
 
-Download them from Instagram or TikTok, **not** from your camera roll.
+These are the five videos you already made following the roadmap. Not your
+five best, not anything new. The ones you already have.
 
-Camera roll videos are a different format that some browsers won't play, and
-they're 10x bigger than they need to be. The versions already posted on
-Instagram and TikTok are exactly the right format. This one tip prevents most
-of the problems people run into.
+**Either the files or the links work.** If you have the video files on your
+computer, great. If not, just grab the link to each post and paste those in.
+
+If you are using files, download them from Instagram or TikTok rather than
+pulling them off your camera roll. Camera roll videos are a format some
+browsers won't play and they're about 10x bigger than they need to be. The
+posted versions are already exactly right.
 
 **2. Know the details for each video.** For each one you'll want:
 - the brand name and their handle

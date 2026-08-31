@@ -73,59 +73,75 @@ Ask these **one at a time**, in this order. Keep each question to one line.
    every creator on the roadmap makes content for those three. Confirm which
    of the three they have actually made a video for and remove any they
    haven't. Then ask if there are others to add. See Step 4 for the logo rule.
-7. **Their 5 videos.** See Step 3, this one is the big one.
+7. **Their 5 roadmap videos.** These are the five videos they already made
+   following the roadmap, not a "best of" selection. See Step 3.
 8. **The two photos.** See Step 4.
 
 While they answer, do not build anything yet. Collect first.
 
 ---
 
-## Step 3: Getting their videos in (the part that breaks)
+## Step 3: Their five videos
 
-Tell them:
+These are the **five videos they already made following the roadmap**. Do not
+ask them to pick their five best, and do not ask them to make anything new.
+They already have these.
 
-> Now the fun part. I need up to 5 of your best UGC videos. I'm opening the
-> folder now, just drag them in.
+They can give you either **the files or the links**. Both are fine, ask which
+they have:
 
-Then actually open the folder for them:
+> For your five roadmap videos, do you have the actual video files, or do you
+> want to just paste me the links to the posts? Either works.
+
+### If they have files
+
+Open the folder for them so they can drag them in:
 
 - macOS: `open media/videos`
 - Windows: `explorer media\videos`
 
-Then say this, word for word, because it prevents the most common failure:
-
-> Quick tip: download these from Instagram or TikTok rather than pulling them
-> off your camera roll. The camera roll versions are a different format that
-> some browsers won't play, and they're huge. The posted versions are already
-> the right format.
-
-Wait for them to say they're done. Then **check every file** with `ls -la` and
-`file`:
+Wait for them to say they're done, then **check every file** with `ls -la`
+and `file`:
 
 - **`.mov` or HEVC** files: Chrome often will not play these. If `ffmpeg` is
-  installed, convert to H.264 mp4 yourself, silently, and just tell them
+  installed, convert to H.264 mp4 yourself, silently, and just say
   "converting these so they play everywhere, one sec." If `ffmpeg` is not
-  installed, do not try to install it. Instead tell them to re-download that
-  specific video from Instagram or TikTok, and wait.
+  installed, do not try to install it. Ask them to re-download that one from
+  Instagram or TikTok instead, since the posted version is already the right
+  format.
 - **Anything over ~25MB**: if `ffmpeg` exists, compress it. If not, tell them
-  which video is oversized and that a shorter clip or the Instagram download
-  will fix it. A 200MB video will make their site unusable on mobile.
-- **Poster frames**: if `ffmpeg` exists, grab a frame from about 1 second into
-  each video and save it as a `.jpg` next to the video, then use it as the
-  `poster`. This stops the grid from flashing white while videos load.
+  which one is oversized. A 200MB video makes the site unusable on a phone.
+- **Poster frames**: if `ffmpeg` exists, grab a frame about 1 second in, save
+  it as a `.jpg` next to the video, and use it as the `poster`. This stops the
+  grid flashing white while videos load.
 
-**If they have no video files at all**, only links: use card pattern B in
-`index.html`. Ask them for a screenshot or thumbnail for each. If they have
-nothing at all, ask them to screenshot the first frame of each post on their
-phone. A link card with no image looks broken, so never ship one.
+Build these with **card pattern A**, which plays the video right in the phone
+frame. This looks better than a link, so prefer it when they have the files.
 
-Then, for **each** video, ask for two things in one message:
+### If they have links
+
+Use **card pattern B**, a thumbnail that opens the post. You need an image for
+each one, so get it in this order:
+
+1. **TikTok links:** fetch the thumbnail yourself, no need to bother them.
+   `curl -s "https://www.tiktok.com/oembed?url=THE_LINK"` returns JSON with a
+   `thumbnail_url`. Download that image into `media/videos/` and use it. Save
+   the file locally, never hotlink the TikTok URL, those expire.
+2. **Instagram links:** this does not work without a login, so just ask. Say
+   "open that post on your phone, screenshot it, and drop it in the folder I
+   just opened." Then open `media/videos` for them.
+
+Never ship a link card with no image. It looks broken.
+
+### Either way
+
+Then, for **each** video, ask:
 
 > For video 1, what's the brand and their handle? And what should the caption
 > say, like "1.2M organic views"?
 
-Repeat per video. If they only have 3 videos, build 3 cards. Do not leave
-empty placeholder phones on a live site, ever.
+If they only have 3, build 3 cards. Never leave an empty placeholder phone on
+a live site.
 
 ---
 
