@@ -77,19 +77,32 @@
 
 <!-- =========================================================
      2. TRUSTED BY
-     CLAUDE: use <img class="trusted__logo"> if a logo file exists in
-     media/logos/, otherwise use <span class="trusted__name">.
-     Mixing both in the same row is fine. Delete this whole
-     <section> if the creator has no brands yet.
+     CLAUDE: this section is REQUIRED, never delete it.
+     Every brand needs a real logo file in media/logos/. Never ship a
+     brand name without its logo. invo.png, launchpoint.png and
+     composio.png are already included because every creator on the
+     roadmap makes content for those three.
      ========================================================= -->
 <section class="trusted">
   <div class="wrap">
     <p class="trusted__label">Trusted by</p>
     <div class="trusted__row">
-      <span class="trusted__name">Brand One</span>
-      <span class="trusted__name">Brand Two</span>
-      <span class="trusted__name">Brand Three</span>
-      <span class="trusted__name">Brand Four</span>
+
+      <div class="trusted__brand">
+        <img class="trusted__logo" src="media/logos/invo.png" alt="Invo">
+        <span class="trusted__name">Invo</span>
+      </div>
+
+      <div class="trusted__brand">
+        <img class="trusted__logo" src="media/logos/launchpoint.png" alt="LaunchPoint">
+        <span class="trusted__name">LaunchPoint</span>
+      </div>
+
+      <div class="trusted__brand">
+        <img class="trusted__logo" src="media/logos/composio.png" alt="Composio">
+        <span class="trusted__name">Composio</span>
+      </div>
+
     </div>
   </div>
 </section>

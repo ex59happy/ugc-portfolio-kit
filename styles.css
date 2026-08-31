@@ -183,29 +183,28 @@ a { color: inherit; }
   gap: clamp(30px, 5.5vw, 76px);
 }
 
-/* image logos */
+/* a brand = its logo tile plus its name, side by side.
+   Real logos only. A name on its own reads as a brand you made up. */
+.trusted__brand {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
 .trusted__logo {
-  height: clamp(28px, 3.4vw, 44px);
-  width: auto;
+  width: clamp(42px, 4.4vw, 56px);
+  height: clamp(42px, 4.4vw, 56px);
+  border-radius: 23%;
   object-fit: contain;
-  opacity: .72;
-  filter: grayscale(100%);
-  transition: opacity .2s ease, filter .2s ease;
+  flex: none;
 }
 
-.trusted__logo:hover { opacity: 1; filter: grayscale(0%); }
-
-/* text wordmarks (fallback when there is no logo file) */
 .trusted__name {
-  font-size: clamp(19px, 2.3vw, 30px);
+  font-size: clamp(17px, 1.9vw, 24px);
   font-weight: 700;
-  letter-spacing: -0.01em;
-  color: var(--ink);
-  opacity: .74;
-  transition: opacity .2s ease;
+  letter-spacing: -0.015em;
+  white-space: nowrap;
 }
-
-.trusted__name:hover { opacity: 1; }
 
 /* ============================================================
    3. UGC EXAMPLES

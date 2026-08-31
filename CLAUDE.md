@@ -68,9 +68,11 @@ Ask these **one at a time**, in this order. Keep each question to one line.
    @ or both without). If they don't have one, drop that row entirely.
 5. **TikTok handle.** Same. If they don't have one, drop the row. Do not
    leave "add your tiktok" on a live site.
-6. **Brands they have worked with**, for the Trusted By strip. Ask for names.
-   If they have none yet, tell them that's completely fine and delete that
-   whole section. Never leave placeholder brands up.
+6. **Brands they have made content for**, for the Trusted By strip. Invo,
+   LaunchPoint and Composio are already built in with their logos, because
+   every creator on the roadmap makes content for those three. Confirm which
+   of the three they have actually made a video for and remove any they
+   haven't. Then ask if there are others to add. See Step 4 for the logo rule.
 7. **Their 5 videos.** See Step 3, this one is the big one.
 8. **The two photos.** See Step 4.
 
@@ -137,10 +139,23 @@ Open `media/` for them the same way. If they only have one photo, use it for
 the hero and remove the photo block from the Work With Me section rather than
 using the same picture twice.
 
-**Brand logos** for Trusted By go in `media/logos/`. Tell them logos are
-optional, because you'll render the brand names as clean text if there are no
-files. Do not go download logos off the internet, and do not use a logo API.
-Text wordmarks look intentional and always work.
+### Brand logos are required
+
+The Trusted By strip is a **required section**. Never delete it, and never
+render a brand name without its logo next to it. A bare name with no logo
+reads like a brand the creator invented.
+
+`media/logos/` already ships with `invo.png`, `launchpoint.png` and
+`composio.png`. Those cover the three brands every creator on the roadmap
+makes content for, so most creators need to add nothing at all.
+
+If they name a brand that is not one of those three, ask them to save that
+brand's logo and drop it into `media/logos/`. The easiest way is to open the
+brand's Instagram profile on their phone, screenshot the profile picture, and
+crop it square. Tell them that, in those words.
+
+If a brand has no usable logo, leave that brand out of the strip entirely
+rather than showing its name on its own.
 
 ---
 
@@ -153,9 +168,8 @@ Edit `index.html` directly. Replace every placeholder. Specifically:
 - Both sets of contact rows (hero **and** Work With Me). They must match.
   Remove `contact__value--empty` from any row you fill in.
 - Cover photo and about photo blocks, swapping the `--empty` versions out.
-- Trusted By: `<img class="trusted__logo">` when a logo file exists,
-  `<span class="trusted__name">` otherwise. Delete the whole `<section>` if
-  they have no brands.
+- Trusted By: one `.trusted__brand` block per brand, each with its logo
+  image AND its name. Never a name without a logo. Never delete the section.
 - The video cards, using pattern A or B from the comments in the file.
 - The footer name.
 

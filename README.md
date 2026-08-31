@@ -30,8 +30,12 @@ best), one for the bottom.
 
 **4. Have your email, Instagram and TikTok handles ready.**
 
-**5. Optional:** the names of brands you've worked with, for the "Trusted by"
-strip. Logo files if you have them, but names alone look great.
+**5. Check which brands you've made content for.** Invo, LaunchPoint and
+Composio are already built in with their logos, so if you've made a video for
+any of them you're done. Making a spec video for a brand counts.
+
+For any other brand, you'll want its logo. Easiest way: open the brand's
+Instagram on your phone, screenshot the profile picture, crop it square.
 
 ---
 

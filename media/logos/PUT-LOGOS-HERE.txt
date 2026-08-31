@@ -1,7 +1,13 @@
-Optional. Drop brand logo files here (png with a transparent
-background looks best, svg is even better).
+Brand logos for the "Trusted by" strip on your site.
 
-No logos? No problem. Claude will write the brand names out as
-clean text instead, which looks just as good.
+Invo, LaunchPoint and Composio are already in here. If you have made
+a video for any of them, you are already done.
+
+To add another brand, drop its logo in this folder. Easiest way:
+open the brand's Instagram on your phone, screenshot the profile
+picture, and crop it square.
+
+Every brand needs a real logo. A brand name on its own looks like
+something you made up.
 
 You can delete this file.
