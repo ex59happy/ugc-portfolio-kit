@@ -135,10 +135,14 @@ Never ship a link card with no image. It looks broken.
 
 ### Either way
 
-Then, for **each** video, ask:
+Then, for **each** video, ask one simple thing:
 
-> For video 1, what's the brand and their handle? And what should the caption
-> say, like "1.2M organic views"?
+> Video 1, which brand was that one for?
+
+**Just the brand name. Nothing else.** Do not ask for view counts, results,
+handles or captions. Creators starting out do not have numbers yet, and asking
+makes them feel behind. If a creator volunteers a real result unprompted, you
+may add it under the brand name, but never go looking for one.
 
 If they only have 3, build 3 cards. Never leave an empty placeholder phone on
 a live site.
@@ -147,9 +151,17 @@ a live site.
 
 ## Step 4: The two photos
 
+Ask for two photos where **you can clearly see their face**, and that look
+somewhat professional or clean-casual. Not a blurry group shot, not a photo
+from across a room, not sunglasses. Brands are deciding whether to work with a
+person, so they need to see the person.
+
 1. **Cover photo** for the hero. Portrait orientation looks best. Save as
    `media/cover.jpg`.
 2. **A second photo** for the Work With Me section. Save as `media/about.jpg`.
+
+Look at each photo after they drop it in. If the face is tiny, cut off, or
+hard to make out, say so plainly and ask for a different one.
 
 Open `media/` for them the same way. If they only have one photo, use it for
 the hero and remove the photo block from the Work With Me section rather than

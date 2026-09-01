@@ -3,6 +3,10 @@ Drop two photos of yourself in this folder:
   cover.jpg   the big photo at the top of your site (portrait works best)
   about.jpg   the photo in the "Work With Me" section
 
+Pick ones where you can clearly see your face, and that look
+somewhat professional or clean-casual. Brands are deciding whether
+to work with a person, so they need to see the person.
+
 Don't worry about the exact names, Claude will rename them for you.
 
 You can delete this file.
