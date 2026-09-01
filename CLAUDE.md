@@ -31,9 +31,8 @@ that live in their head or on their phone.
 
 ## Step 0: Make sure the files are in the right place
 
-Read **`BRANDS.md`** next to this file before you start. It tells you which
-brands the roadmap videos are for and how to work that out yourself, so you
-can confirm rather than interrogate.
+Read **`BRANDS.md`** next to this file before you start. It lists the roadmap
+brands, their logo files, and how to spell them.
 
 Then confirm `index.html`, `styles.css`, `script.js` and
 `media/` are all sitting next to this file. If they ended up nested inside a
@@ -73,12 +72,11 @@ Ask these **one at a time**, in this order. Keep each question to one line.
 5. **TikTok handle.** Same. If they don't have one, drop the row. Do not
    leave "add your tiktok" on a live site.
 6. **Brands for the Trusted By strip.** Do not ask this as a separate
-   question. Once the videos are confirmed in Step 3 you already know the
-   answer, so build the strip from exactly those brands and drop any of the
-   three built-in logos they did not actually make a video for. Then ask once
-   whether there are any others to add. See Step 4 for the logo rule.
-7. **Their 5 roadmap videos.** These are the five videos they already made
-   following the roadmap, not a "best of" selection. See Step 3.
+   question. The creator names a brand with each video in Step 3, so you
+   already have the list. Build the strip from exactly those brands and drop
+   any built-in logo they did not name. Then ask once whether there are any
+   others to add. See Step 4 for the logo rule.
+7. **Their 5 roadmap videos, each with its brand.** See Step 3.
 8. **The two photos.** See Step 4.
 
 While they answer, do not build anything yet. Collect first.
@@ -89,80 +87,84 @@ While they answer, do not build anything yet. Collect first.
 
 These are the **five videos they already made following the roadmap**. Do not
 ask them to pick their five best, and do not ask them to make anything new.
-They already have these.
 
-They can give you either **the files or the links**. Both are fine, ask which
-they have:
+### The pattern to expect
 
-> For your five roadmap videos, do you have the actual video files, or do you
-> want to just paste me the links to the posts? Either works.
+For each video the creator gives you **two things together**: the video, and
+the brand it is for. Either a link or a file, plus a brand name.
 
-### If they have files
+Most will do it like this without being asked:
 
-Open the folder for them so they can drag them in:
+> here's video 1, this one's for LaunchPoint https://tiktok.com/...
+> this one's for Invo https://tiktok.com/...
+
+If they hand you all five that way, great, you have everything. Just confirm
+the list back and move on.
+
+### If they haven't started, walk them through it one at a time
+
+Ask for the video and the brand in the same breath. Never ask for one and then
+circle back for the other.
+
+> Video 1: paste the link, or drag the file into the folder I'm opening. And
+> tell me which brand it's for.
+
+Then video 2, and so on. Keep it to one video per message.
+
+If they give you a video but forget the brand, ask for just that one:
+
+> Got it. Which brand is that one for?
+
+**Never guess the brand.** See `BRANDS.md` for the correct spelling and which
+logo file goes with each.
+
+### Handling files
+
+If they are dragging files in, open the folder for them:
 
 - macOS: `open media/videos`
 - Windows: `explorer media\videos`
 
-Wait for them to say they're done, then **check every file** with `ls -la`
-and `file`:
+Then **check every file** with `ls -la` and `file`:
 
-- **`.mov` or HEVC** files: Chrome often will not play these. If `ffmpeg` is
-  installed, convert to H.264 mp4 yourself, silently, and just say
-  "converting these so they play everywhere, one sec." If `ffmpeg` is not
-  installed, do not try to install it. Ask them to re-download that one from
-  Instagram or TikTok instead, since the posted version is already the right
-  format.
-- **Anything over ~25MB**: if `ffmpeg` exists, compress it. If not, tell them
-  which one is oversized. A 200MB video makes the site unusable on a phone.
+- **`.mov` or HEVC**: Chrome often will not play these. If `ffmpeg` is
+  installed, convert to H.264 mp4 silently and just say "converting these so
+  they play everywhere, one sec." If `ffmpeg` is not installed, do not try to
+  install it. Ask them to re-download that one from Instagram or TikTok, since
+  the posted version is already the right format.
+- **Over ~25MB**: if `ffmpeg` exists, compress it. If not, say which one is
+  oversized. A 200MB video makes the site unusable on a phone.
 - **Poster frames**: if `ffmpeg` exists, grab a frame about 1 second in, save
   it as a `.jpg` next to the video, and use it as the `poster`. This stops the
   grid flashing white while videos load.
 
 Build these with **card pattern A**, which plays the video right in the phone
-frame. This looks better than a link, so prefer it when they have the files.
+frame. Prefer this when they have the files, it looks better than a link.
 
-### If they have links
+### Handling links
 
 Use **card pattern B**, a thumbnail that opens the post. You need an image for
-each one, so get it in this order:
+each one:
 
-1. **TikTok links:** fetch the thumbnail yourself, no need to bother them.
-   `curl -s "https://www.tiktok.com/oembed?url=THE_LINK"` returns JSON with a
-   `thumbnail_url`. Download that image into `media/videos/` and use it. Save
-   the file locally, never hotlink the TikTok URL, those expire.
-   **Keep the `title` field from that same response.** It is the caption, and
-   it is usually how you identify the brand. See `BRANDS.md`.
-2. **Instagram links:** this does not work without a login, so just ask. Say
-   "open that post on your phone, screenshot it, and drop it in the folder I
-   just opened." Then open `media/videos` for them.
+- **TikTok:** fetch it yourself, no need to bother them.
+  `curl -s "https://www.tiktok.com/oembed?url=THE_LINK"` returns JSON with a
+  `thumbnail_url`. Download that image into `media/videos/` and use it. Save it
+  locally, never hotlink the TikTok URL, those expire.
+- **Instagram:** this needs a login, so just ask. Say "open that post on your
+  phone, screenshot it, and drop it in the folder I just opened." Then open
+  `media/videos` for them.
 
 Never ship a link card with no image. It looks broken.
 
-### Either way
+### Brand name only
 
-### Which brand is each video for
+**Nothing goes under the video except the brand name.** Do not ask for view
+counts, results, handles or captions. Creators starting out do not have
+numbers yet, and asking makes them feel behind. If a creator volunteers a real
+result unprompted you may add it, but never go looking for one.
 
-Do not ask cold. **Work it out first, then confirm**, using the method in
-`BRANDS.md`: read the caption from the TikTok oEmbed response you already
-fetched, check the file names, and use roadmap order as a hint.
-
-Then confirm the whole set in one message and let them fix it in one word:
-
-> Looks like video 1 is LaunchPoint, 2 and 3 are Invo, 4 and 5 are Composio.
-> Sound right?
-
-Only fall back to asking per video for the ones you genuinely cannot place.
-
-**Brand name only. Nothing else.** Do not ask for view counts, results,
-handles or captions. Creators starting out do not have numbers yet, and asking
-makes them feel behind. If a creator volunteers a real result unprompted, you
-may add it under the brand name, but never go looking for one.
-
-Never put a brand on the live page that the creator has not confirmed.
-
-If they only have 3, build 3 cards. Never leave an empty placeholder phone on
-a live site.
+If they only have 3 videos, build 3 cards. Never leave an empty placeholder
+phone on a live site.
 
 ---
 

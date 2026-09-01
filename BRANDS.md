@@ -1,68 +1,35 @@
 # Roadmap brands reference
 
-Read this before asking the creator which brand a video is for.
-
-Everyone following the roadmap makes their videos for the same small set of
-brands, so you can usually work it out yourself and just have them confirm.
-Confirming is far less work for them than answering cold, and it is much
-harder to get wrong.
+**The creator tells you which brand each video is for.** You are not meant to
+work it out. This file is just so you spell things right and use the correct
+logo when they tell you.
 
 ---
 
 ## The brands
 
-| Brand | Logo file | What their videos are |
-|---|---|---|
-| **LaunchPoint** | `media/logos/launchpoint.png` | The first recreation in the roadmap. |
-| **Invo** | `media/logos/invo.png` | Money / trading angle. Often a reaction hook over a screen recording of a few websites, with Invo last. CTA is a comment keyword like COPY or website. |
-| **Composio** | `media/logos/composio.png` | AI tool demo, usually connecting apps. Link is always `composio.dev/foryou`. |
+| Brand | Logo file |
+|---|---|
+| **LaunchPoint** | `media/logos/launchpoint.png` |
+| **Invo** | `media/logos/invo.png` |
+| **Composio** | `media/logos/composio.png` |
 
-Spelling matters on the page: **LaunchPoint** (capital P), **Invo**, **Composio**.
+Spelling matters on the page: **LaunchPoint** (capital P), **Invo**,
+**Composio**. Fix their capitalisation silently if they type it differently.
 
----
-
-## How to work out which brand a video is for
-
-Go in this order and stop as soon as you are confident.
-
-**1. The caption, if you have a link.** For a TikTok link you already fetched
-the oEmbed JSON for the thumbnail. That same response has a `title` field
-holding the caption. Read it.
-
-- Caption contains `#composiopartner` → **Composio.** This is required on every
-  Composio video, so it is a reliable tell.
-- Caption contains `composio.dev` → **Composio.**
-- Caption mentions copying trades, mimicking traders, or a COPY keyword →
-  likely **Invo.**
-
-**2. The file name.** Creators often keep names like `launchpoint_hook3.mp4`
-or `invo_b2.mp4`. Match case-insensitively against the three brand names.
-
-**3. Roadmap order.** If they gave you their videos in roadmap order, the
-**first one is LaunchPoint.** Treat later positions as a weak hint only.
-
-**4. Just ask.** If none of the above gives you a confident answer, ask
-plainly, and offer the three as options:
-
-> Video 3, which brand was that one for? Most people's are LaunchPoint, Invo
-> or Composio.
+These three ship with the kit because that is what the roadmap videos are for.
+A creator may also have real client work outside this list, which is great.
+Put it on the page, but they will need to supply the logo. See the logo
+section in `CLAUDE.md`.
 
 ---
 
-## Always confirm, never assume silently
+## If they forget to say
 
-When you have worked out a guess, say it as a guess and let them correct it in
-one word:
+Just ask for that one:
 
-> Video 1 looks like LaunchPoint, video 2 looks like Composio. Right?
+> Video 3, which brand is that one for?
 
-Never put a brand on the live page that the creator has not confirmed. Getting
-this wrong is worse than asking.
-
----
-
-## Brands outside this list
-
-A creator may have real client work beyond the roadmap. That is great, put it
-on the page. They will need to supply the logo, see the logo section in
-`CLAUDE.md`.
+Do not guess and do not go digging. Asking takes them two seconds and is
+always correct. Never put a brand on the live page that the creator did not
+tell you.

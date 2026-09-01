@@ -25,8 +25,9 @@ pulling them off your camera roll. Camera roll videos are a format some
 browsers won't play and they're about 10x bigger than they need to be. The
 posted versions are already exactly right.
 
-**2. Know which brand each video was for.** Just the brand name. You do not
-need view counts or results.
+**2. Know which brand each video is for.** You will hand these over together,
+one at a time, like "this one's for LaunchPoint" with the link or the file.
+Just the brand name. You do not need view counts or results.
 
 **3. Pick 2 photos of yourself.** Ones where you can clearly see your face,
 and that look somewhat professional or clean-casual. One goes at the top of
