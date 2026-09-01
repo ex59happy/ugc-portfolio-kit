@@ -31,7 +31,11 @@ that live in their head or on their phone.
 
 ## Step 0: Make sure the files are in the right place
 
-Before anything else, confirm `index.html`, `styles.css`, `script.js` and
+Read **`BRANDS.md`** next to this file before you start. It tells you which
+brands the roadmap videos are for and how to work that out yourself, so you
+can confirm rather than interrogate.
+
+Then confirm `index.html`, `styles.css`, `script.js` and
 `media/` are all sitting next to this file. If they ended up nested inside a
 subfolder (something like `ugc-portfolio-kit-main`), move everything up one
 level and delete the empty subfolder. Do this silently, do not mention it.
@@ -68,11 +72,11 @@ Ask these **one at a time**, in this order. Keep each question to one line.
    @ or both without). If they don't have one, drop that row entirely.
 5. **TikTok handle.** Same. If they don't have one, drop the row. Do not
    leave "add your tiktok" on a live site.
-6. **Brands they have made content for**, for the Trusted By strip. Invo,
-   LaunchPoint and Composio are already built in with their logos, because
-   every creator on the roadmap makes content for those three. Confirm which
-   of the three they have actually made a video for and remove any they
-   haven't. Then ask if there are others to add. See Step 4 for the logo rule.
+6. **Brands for the Trusted By strip.** Do not ask this as a separate
+   question. Once the videos are confirmed in Step 3 you already know the
+   answer, so build the strip from exactly those brands and drop any of the
+   three built-in logos they did not actually make a video for. Then ask once
+   whether there are any others to add. See Step 4 for the logo rule.
 7. **Their 5 roadmap videos.** These are the five videos they already made
    following the roadmap, not a "best of" selection. See Step 3.
 8. **The two photos.** See Step 4.
@@ -127,6 +131,8 @@ each one, so get it in this order:
    `curl -s "https://www.tiktok.com/oembed?url=THE_LINK"` returns JSON with a
    `thumbnail_url`. Download that image into `media/videos/` and use it. Save
    the file locally, never hotlink the TikTok URL, those expire.
+   **Keep the `title` field from that same response.** It is the caption, and
+   it is usually how you identify the brand. See `BRANDS.md`.
 2. **Instagram links:** this does not work without a login, so just ask. Say
    "open that post on your phone, screenshot it, and drop it in the folder I
    just opened." Then open `media/videos` for them.
@@ -135,14 +141,25 @@ Never ship a link card with no image. It looks broken.
 
 ### Either way
 
-Then, for **each** video, ask one simple thing:
+### Which brand is each video for
 
-> Video 1, which brand was that one for?
+Do not ask cold. **Work it out first, then confirm**, using the method in
+`BRANDS.md`: read the caption from the TikTok oEmbed response you already
+fetched, check the file names, and use roadmap order as a hint.
 
-**Just the brand name. Nothing else.** Do not ask for view counts, results,
+Then confirm the whole set in one message and let them fix it in one word:
+
+> Looks like video 1 is LaunchPoint, 2 and 3 are Invo, 4 and 5 are Composio.
+> Sound right?
+
+Only fall back to asking per video for the ones you genuinely cannot place.
+
+**Brand name only. Nothing else.** Do not ask for view counts, results,
 handles or captions. Creators starting out do not have numbers yet, and asking
 makes them feel behind. If a creator volunteers a real result unprompted, you
 may add it under the brand name, but never go looking for one.
+
+Never put a brand on the live page that the creator has not confirmed.
 
 If they only have 3, build 3 cards. Never leave an empty placeholder phone on
 a live site.
